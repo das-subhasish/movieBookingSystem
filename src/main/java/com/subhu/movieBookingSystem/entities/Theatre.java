@@ -1,50 +1,67 @@
 package com.subhu.movieBookingSystem.entities;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+
 
 @Entity
 public class Theatre {
 
-	@Id
-	@GeneratedValue
-	private int theatreId;
+  @Id
+  @GeneratedValue
+  private int theatreId;
 
-	@Column(length = 20, nullable = false, unique = true)
-	private String theatreName;
+  @Column(length = 20, nullable = false, unique = true)
+  private String theatreName;
 
-	@Column(nullable = false)
-	private float ticketPrice = 150.00f;
+  @Column(nullable = false)
+  private float ticketPrice = 150.00f;
 
-	public int getTheatreId() {
-		return theatreId;
-	}
+  @ManyToOne
+  @JoinColumn(name = "city_id", nullable = false)
+  @JsonManagedReference
+  private City city;
 
-	public void setTheatreId(int theatreId) {
-		this.theatreId = theatreId;
-	}
+  public City getCity() {
+    return city;
+  }
 
-	public String getTheatreName() {
-		return theatreName;
-	}
+  public void setCity(City city) {
+    this.city = city;
+  }
 
-	public void setTheatreName(String theatreName) {
-		this.theatreName = theatreName;
-	}
+  public int getTheatreId() {
+    return theatreId;
+  }
 
-	public float getTicketPrice() {
-		return ticketPrice;
-	}
+  public void setTheatreId(int theatreId) {
+    this.theatreId = theatreId;
+  }
 
-	public void setTicketPrice(float ticketPrice) {
-		this.ticketPrice = ticketPrice;
-	}
+  public String getTheatreName() {
+    return theatreName;
+  }
 
-	@Override
-	public String toString() {
-		return "Theatre{" + "theatreId=" + theatreId + ", theatreName='" + theatreName + '\'' + ", ticketPrice="
-				+ ticketPrice + '}';
-	}
+  public void setTheatreName(String theatreName) {
+    this.theatreName = theatreName;
+  }
+
+  public float getTicketPrice() {
+    return ticketPrice;
+  }
+
+  public void setTicketPrice(float ticketPrice) {
+    this.ticketPrice = ticketPrice;
+  }
+
+  @Override
+  public String toString() {
+    return "Theatre{" + "theatreId=" + theatreId + ", theatreName='" + theatreName + '\'' + ", ticketPrice="
+        + ticketPrice + '}';
+  }
 }
