@@ -1,0 +1,61 @@
+2021-09-10 13:11:17.137  INFO 5928 --- [main] c.s.m.MovieBookingSystemApplication      : Starting MovieBookingSystemApplication using Java 15.0.2 on MSI with PID 5928 (C:\Users\dassu\Downloads\movieBookingSystem\movieBookingSystem\target\classes started by dassu in C:\Users\dassu\Downloads\movieBookingSystem\movieBookingSystem)
+2021-09-10 13:11:17.142  INFO 5928 --- [main] c.s.m.MovieBookingSystemApplication      : No active profile set, falling back to default profiles: default
+2021-09-10 13:11:18.051  INFO 5928 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-09-10 13:11:18.242  INFO 5928 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 183 ms. Found 9 JPA repository interfaces.
+2021-09-10 13:11:18.450  INFO 5928 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=cb5fe698-b497-3833-b775-80231af1d818
+2021-09-10 13:11:18.858  INFO 5928 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2021-09-10 13:11:18.870  INFO 5928 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-09-10 13:11:18.871  INFO 5928 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021-09-10 13:11:19.018  INFO 5928 --- [main] o.a.c.c.C.[.[localhost].[/mbs/v1]        : Initializing Spring embedded WebApplicationContext
+2021-09-10 13:11:19.018  INFO 5928 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1835 ms
+2021-09-10 13:11:19.059  INFO 5928 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-09-10 13:11:19.232  INFO 5928 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-09-10 13:11:19.238  INFO 5928 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:mbsdb'
+2021-09-10 13:11:19.353  INFO 5928 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-09-10 13:11:19.411  INFO 5928 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-09-10 13:11:19.538  INFO 5928 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-09-10 13:11:19.700  INFO 5928 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-09-10 13:11:20.573  INFO 5928 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-09-10 13:11:20.581  INFO 5928 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-09-10 13:11:21.445  WARN 5928 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-09-10 13:11:21.972  INFO 5928 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2021-09-10 13:11:22.155  WARN 5928 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2021-09-10 13:11:22.183  INFO 5928 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2021-09-10 13:11:22.313  INFO 5928 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2021-09-10 13:11:22.319  INFO 5928 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-09-10 13:11:22.365  INFO 5928 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2021-09-10 13:11:22.365  INFO 5928 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2021-09-10 13:11:22.365  INFO 5928 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2021-09-10 13:11:22.365  INFO 5928 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2021-09-10 13:11:22.366  INFO 5928 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2021-09-10 13:11:22.366  INFO 5928 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2021-09-10 13:11:22.366  INFO 5928 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2021-09-10 13:11:22.815  INFO 5928 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2021-09-10 13:11:22.821  INFO 5928 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2021-09-10 13:11:22.825  INFO 5928 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2021-09-10 13:11:22.833  INFO 5928 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1631259682831 with initial instances count: 0
+2021-09-10 13:11:22.836  INFO 5928 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application EUREKACLIENT with eureka with status UP
+2021-09-10 13:11:22.837  INFO 5928 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1631259682837, current=UP, previous=STARTING]
+2021-09-10 13:11:22.839  INFO 5928 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_EUREKACLIENT/MSI:eurekaclient:8081: registering service...
+2021-09-10 13:11:22.880  INFO 5928 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path '/mbs/v1'
+2021-09-10 13:11:22.881  INFO 5928 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8081
+2021-09-10 13:11:22.985  INFO 5928 --- [main] c.s.m.MovieBookingSystemApplication      : Started MovieBookingSystemApplication in 6.327 seconds (JVM running for 6.766)
+2021-09-10 13:11:23.004  INFO 5928 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_EUREKACLIENT/MSI:eurekaclient:8081 - registration status: 204
+2021-09-10 13:11:52.830  INFO 5928 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2021-09-10 13:11:52.830  INFO 5928 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2021-09-10 13:11:52.831  INFO 5928 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2021-09-10 13:11:52.831  INFO 5928 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2021-09-10 13:11:52.831  INFO 5928 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2021-09-10 13:11:52.831  INFO 5928 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2021-09-10 13:11:52.831  INFO 5928 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2021-09-10 13:11:52.844  INFO 5928 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2021-09-10 13:16:22.384  INFO 5928 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-09-10 13:21:22.397  INFO 5928 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-09-10 13:26:22.406  INFO 5928 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-09-10 13:31:22.413  INFO 5928 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-09-10 13:36:22.429  INFO 5928 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-09-10 13:41:22.433  INFO 5928 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-09-10 13:49:01.213  WARN 5928 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=7m41s423ms393µs300ns).
+2021-09-10 13:53:33.840  INFO 5928 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-09-10 13:58:33.854  INFO 5928 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-09-10 14:03:33.868  INFO 5928 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
